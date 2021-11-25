@@ -1,0 +1,44 @@
+# Metadata for Museums
+---
+Identifier: '3d0d5ff6-da4c-428e-bc17-2548f4f54687'
+Name: 'museums'
+Title: 'Museums'
+Description: 'This theme contains museums in Singapore.'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'asian civilisations museum'
+  - 'museums'
+  - 'national museum of singapore'
+  - 'onemap'
+  - 'peranakan museum'
+  - 'sam art museum  8Q'
+  - 'sam art museum at 8Q'
+  - 'singapore art museum'
+  - 'singapore philatelic museum'
+  - 'themes'
+Publisher:
+  Name: 'National Heritage Board'
+  Admin 1:
+    Name: 'Ong Chun Yeow'
+    Department: 'NATIONAL HERITAGE BOARD'
+    Email: 'ong_chun_yeow@nhb.gov.sg'
+Sources:
+  - 'National Heritage Board'
+Source Url: 'http://www.onemap.sg/API/Help/'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Last Updated: '2019-01-24T09:58:50.460477'
+Resources:
+  -
+    Identifier: 'e4bfcc27-6b97-4c44-80af-1030a0bcaecf'
+    Title: 'Museums (KML)'
+    Url: 'https://geo.data.gov.sg/museum/2018/12/27/kml/museum.kml'
+    Format: 'KML'
+    Last Updated: '2018-12-26T16:00:00'
+  -
+    Identifier: 'a8bcdfdf-e761-45b7-a880-cbd6cd8faf99'
+    Title: 'Museums (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/museum/2018/12/27/geojson/museum.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2018-12-26T16:00:00'

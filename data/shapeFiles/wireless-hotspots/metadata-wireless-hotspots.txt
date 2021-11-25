@@ -1,0 +1,37 @@
+# Metadata for Wireless HotSpots
+---
+Identifier: '6b3f1e1b-257d-4d49-8142-1b2271d20143'
+Name: 'wireless-hotspots'
+Title: 'Wireless HotSpots'
+Description: 'To locate Wireless@SG hotspots in Singapore.'
+Topics:
+  - 'Technology'
+Keywords:
+  - 'Wi-Fi'
+  - 'WiFi'
+  - 'WirelessSG'
+  - 'wireless'
+Publisher:
+  Name: 'Infocomm Media Development Authority'
+  Admin 1:
+    Name: 'XING Yihuan'
+    Department: 'INFOCOMM MEDIA DEVELOPMENT AUTHORITY'
+    Email: 'xing_yihuan@imda.gov.sg'
+Sources:
+  - 'Infocomm Media Development Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Last Updated: '2020-03-22T00:02:48.445167'
+Resources:
+  -
+    Identifier: 'd8febd81-5873-4070-b2c0-095657d3b362'
+    Title: 'Wireless HotSpots (KML)'
+    Url: 'https://geo.data.gov.sg/wireless-hotspots/2020/03/18/kml/wireless-hotspots.kml'
+    Format: 'KML'
+    Last Updated: '2020-03-17T16:00:00'
+  -
+    Identifier: '98971e0f-6fcd-408b-b01e-c5d75a35c796'
+    Title: 'Wireless HotSpots (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/wireless-hotspots/2020/03/18/geojson/wireless-hotspots.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2020-03-17T16:00:00'

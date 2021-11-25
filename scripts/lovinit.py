@@ -10,7 +10,8 @@ import numpy as np
 import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import sys
+sys.path.append("..")
 import seaborn as sns
 sns.set_theme()
 import requests
@@ -20,31 +21,38 @@ from shapely.ops import cascaded_union
 from shapely.ops import unary_union
 from geovoronoi.plotting import subplot_for_map, plot_voronoi_polys_with_points_in_area
 from geovoronoi import voronoi_regions_from_coords, points_to_coords
+from data.db_description import getDatabase
+
 
 
 
 class imlovint():
     
-    def __init__(self,chain='MCD',sg_region_shape='master-plan-2019-region-boundary-no-sea-kml-polygon.shp',notebook=True):
+    def __init__(self,chain='MCD',notebook=True):
         
+        
+       
+        chainDB=getDatabase()
+        regionDB=next(item for item in chainDB if item['Name'] == 'MASTER_PLAN')  
+        attrDB=next(item for item in chainDB if item['Name'] == chain)
+         
         if notebook== False:
-            self.sg_region_shape_path='../data/'+sg_region_shape
-            self.data_path='../data/'
-            if chain=='MCD':
-                self.image_path='../data/MCD.png' 
-        if notebook== True:
-             self.sg_region_shape_path='data/'+sg_region_shape
-             self.data_path='data/' 
-             if chain=='MCD':
-                 self.image_path='data/MCD.png' 
-        
-        
-        self.chain=chain    
-        self.getBoundary()
-        self.getShape()
+         
+            self.shape_path='../'
+            self.image_path='../'+attrDB['logoFile']
             
-    def getBoundary(self,plot=False): 
-        region = gpd.read_file(self.sg_region_shape_path)
+        if notebook== True:
+         
+              self.shape_path='' 
+              self.image_path=attrDB['logoFile']
+            
+        self.chain=chain    
+        self.getBoundary(regionDB)
+        self.getShape(chain)
+            
+    def getBoundary(self,regionDB,plot=False): 
+        
+        region = gpd.read_file(self.shape_path + regionDB['shapeFile'])
         polygons=[region.iloc[0]["geometry"],
                   region.iloc[1]["geometry"],
                   region.iloc[2]["geometry"],
@@ -60,10 +68,12 @@ class imlovint():
             ax.axis('off')
             plt.show()
 
-    def getShape(self):
-        if self.chain=='MCD':
-            self.chain_gdf = gpd.read_file(self.data_path+'mcd_gdf.shp')
+    def getShape(self,chain):
         
+        chainDB=getDatabase()
+        attrDB=next(item for item in chainDB if item['Name'] == chain)
+        self.chain_gdf = gpd.read_file(self.shape_path+attrDB['shapeFile'])
+
 
 
     def justDots(self):
@@ -97,46 +107,92 @@ class imlovint():
         ax.axis('off')
         plt.show()
     
+    
         
+    def getNearby(self,address='Marina Bay Sands',distance=0.03):
+        url='https://developers.onemap.sg/commonapi/search?searchVal='+str(address)+'&returnGeom=Y&getAddrDetails=Y&pageNum=1'
+        jsondata=requests.get(url).json()
+        
+        if len(jsondata['results'])>0:
+            print('Found '+str(len(jsondata['results']))+ ' results, using the first default one')
+            print(str(jsondata['results'][0]['ADDRESS']))
+            lat=float(jsondata['results'][0]['LATITUDE'])
+            long=float(jsondata['results'][0]['LONGITUDE'])
+            # print(long,lat)
+            
+            local=gpd.GeoDataFrame()
+            geoser=gpd.GeoDataFrame([Point(long,lat)])
+            local['geometry']=geoser[0]
+            
+            local_buffer=gpd.GeoDataFrame()
+            local_buffer['geometry']=local.buffer(distance)
+            local_buffer.crs="epsg:4326"
+            
+          
+            bool_list=[]
+            for i in range(len(self.chain_gdf)):
+                bool_list.append(local_buffer.contains(self.chain_gdf.iloc[i]['geometry']).item())
+            
+            nearbyDF=pd.DataFrame()
+            if(any(ele for ele in bool_list)==True):
+                
+                chain_inlocal=[i for i, x in enumerate(bool_list) if x]
+                print('\n'+str(len(chain_inlocal))+' chain Found')
+                for j in range(len(chain_inlocal)):
+                    nearbyDF=nearbyDF.append(self.chain_gdf.iloc[chain_inlocal[j]])
+                    
+                    # print(pd.DataFrame(self.chain_gdf.iloc[chain_inlocal[j]]))
+                
+           
+            
+               
+            else:
+                print("\nNo chain found at the given address")
+            self.boundary = self.boundary.to_crs(epsg=3395)
+            gdf_proj = self.chain_gdf.to_crs(self.boundary.crs)
+            local_buffer_proj = local_buffer.to_crs(self.boundary.crs)
 
+            boundary_shape = cascaded_union(self.boundary.geometry)
+            coords = points_to_coords(gdf_proj.geometry)
 
+            poly_shapes,pts = voronoi_regions_from_coords(coords, boundary_shape)
+            # fig, ax = subplot_for_map()
+            
+            arr_image = plt.imread(self.image_path, format='png')
+            fig, ax = plt.subplots(figsize=(7/4,1))
+            ax.axis('off')
+            ax.imshow(arr_image)
+            plt.show()
+
+            fig, ax = plt.subplots(figsize=(12,8))
+            
+            plot_voronoi_polys_with_points_in_area(ax, boundary_shape, poly_shapes, coords,pts,points_markersize=20)
+            local_buffer_proj.plot(ax=ax,color='red',edgecolor='black',alpha=0.5)
+            ax.set_title('Voronoi regions for '+str(self.chain) +' chain in Singapore, with location radius of 3kms',fontsize=15)
+            plt.tight_layout()
+            ax.axis('off')
+            plt.show()
+            
+            nearbyDF.reset_index(drop=True,inplace=True)
+            # print(nearbyDF.head()) 
+            return nearbyDF
+           
+            
+            
         
         
         
         
 if __name__ == '__main__':
-    imlovint_class=imlovint(notebook=False)
+    imlovint_class=imlovint(chain='MUSEUMS',notebook=False)
     # imlovint_class.getBoundary(plot=True)
     # imlovint_class.justDots()
-    imlovint_class.drawVoronoi()
-       
-# arr_image = plt.imread('../data/MCD.png', format='png')
+    # imlovint_class.drawVoronoi()
+    nearbyDF=imlovint_class.getNearby(address='Bukit Timah' , distance=0.03)
     
+      
 
-# fig, ax = plt.subplots(figsize=(12,8))
-
-
-# im = Image.open(')
-
-# height = im.size[1]
-
-# # We need a float array between 0-1, rather than
-# # a uint8 array between 0-255
-# im = np.array(im).astype(np.float) / 255
-
-# fig = plt.figure()
-
-# plt.plot(np.arange(10), 4 * np.arange(10))
-
-# # With newer (1.0) versions of matplotlib, you can 
-# # use the "zorder" kwarg to make the image overlay
-# # the plot, rather than hide behind it... (e.g. zorder=10)
-# fig.figimage(im, 0, fig.bbox.ymax - height)
-
-# # (Saving with the same dpi as the screen default to
-# #  avoid displacing the logo image)
-# fig.savefig('/home/jofer/temp.png', dpi=80)
-
-# plt.show()
-
-
+   # 'MCD' :  ok    
+   # 'LIBRARY': ok
+   # 'MUSEUMS'  : ok
+       
