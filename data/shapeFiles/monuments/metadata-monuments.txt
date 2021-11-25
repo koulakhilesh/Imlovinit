@@ -1,0 +1,36 @@
+# Metadata for Monuments
+---
+Identifier: '70bb0a29-540b-4e53-b9ba-2f7326fcc637'
+Name: 'monuments'
+Title: 'Monuments'
+Description: 'To Locate monuments in Sinagpore.'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'monuments'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'National Heritage Board'
+  Admin 1:
+    Name: 'Ong Chun Yeow'
+    Department: 'NATIONAL HERITAGE BOARD'
+    Email: 'ong_chun_yeow@nhb.gov.sg'
+Sources:
+  - 'National Heritage Board'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Last Updated: '2019-01-24T09:58:45.689401'
+Resources:
+  -
+    Identifier: 'e67dd6c9-f79d-49a3-afd8-06d26aa6c037'
+    Title: 'Monuments (KML)'
+    Url: 'https://geo.data.gov.sg/monuments/2018/12/27/kml/monuments.kml'
+    Format: 'KML'
+    Last Updated: '2018-12-26T16:00:00'
+  -
+    Identifier: 'c306afd6-8e14-40c0-8ff8-3ae2047e04e5'
+    Title: 'Monuments (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/monuments/2018/12/27/geojson/monuments.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2018-12-26T16:00:00'

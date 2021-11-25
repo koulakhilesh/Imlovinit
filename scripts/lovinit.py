@@ -32,9 +32,12 @@ class imlovint():
         
         
        
-        chainDB=getDatabase()
-        regionDB=next(item for item in chainDB if item['Name'] == 'MASTER_PLAN')  
-        attrDB=next(item for item in chainDB if item['Name'] == chain)
+        region_db,chainDB=getDatabase()
+        # print(region_db)
+        self.regionDB=next(item for item in region_db if item['Name'] == 'MASTER_PLAN')  
+        
+        attrDB=next(item_ for item_ in chainDB if item_['Name'] == chain)
+        # print(attrDB)
          
         if notebook== False:
          
@@ -47,12 +50,12 @@ class imlovint():
               self.image_path=attrDB['logoFile']
             
         self.chain=chain    
-        self.getBoundary(regionDB)
+        self.getBoundary()
         self.getShape(chain)
             
-    def getBoundary(self,regionDB,plot=False): 
+    def getBoundary(self,plot=False): 
         
-        region = gpd.read_file(self.shape_path + regionDB['shapeFile'])
+        region = gpd.read_file(self.shape_path + self.regionDB['shapeFile'])
         polygons=[region.iloc[0]["geometry"],
                   region.iloc[1]["geometry"],
                   region.iloc[2]["geometry"],
@@ -70,7 +73,7 @@ class imlovint():
 
     def getShape(self,chain):
         
-        chainDB=getDatabase()
+        _,chainDB=getDatabase()
         attrDB=next(item for item in chainDB if item['Name'] == chain)
         self.chain_gdf = gpd.read_file(self.shape_path+attrDB['shapeFile'])
 
@@ -184,12 +187,12 @@ class imlovint():
         
         
 if __name__ == '__main__':
-    imlovint_class=imlovint(chain='MUSEUMS',notebook=False)
+    imlovint_class=imlovint(chain='HAWKER_CENTRE',notebook=False)
     # imlovint_class.getBoundary(plot=True)
     # imlovint_class.justDots()
     # imlovint_class.drawVoronoi()
     nearbyDF=imlovint_class.getNearby(address='Bukit Timah' , distance=0.03)
-    
+    # 
       
 
    # 'MCD' :  ok    

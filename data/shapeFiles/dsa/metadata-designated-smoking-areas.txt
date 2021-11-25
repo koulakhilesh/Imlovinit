@@ -1,0 +1,36 @@
+# Metadata for Designated Smoking Areas
+---
+Identifier: '1c08f3ba-299b-498b-a112-c0b7beb5154f'
+Name: 'designated-smoking-areas'
+Title: 'Designated Smoking Areas'
+Description: 'This data shows the location of Designated Smoking Areas (DSA)'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'DSA'
+  - 'Non-smoking'
+  - 'Smoking'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Eileen Yap'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'eileen_yap@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Last Updated: '2021-09-09T00:02:27.911591'
+Resources:
+  -
+    Identifier: 'fdd73b5a-7350-468d-8858-333326dd7238'
+    Title: 'Designated Smoking Areas (KML)'
+    Url: 'https://geo.data.gov.sg/dsa/2021/09/06/kml/dsa.kml'
+    Format: 'KML'
+    Last Updated: '2021-09-05T16:00:00'
+  -
+    Identifier: '09b646ba-f4d7-470a-9d82-759efdbe97e8'
+    Title: 'Designated Smoking Areas (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/dsa/2021/09/06/geojson/dsa.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2021-09-05T16:00:00'

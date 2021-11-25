@@ -1,0 +1,37 @@
+# Metadata for Waste Treatment
+---
+Identifier: '82902624-9d48-4c7d-90c2-e4dadbc168ad'
+Name: 'waste-treatment'
+Title: 'Waste Treatment'
+Description: 'Location of Toxic Industrial Wastes Treatment and Disposal Facilities'
+Topics:
+  - 'Environment'
+Keywords:
+  - 'onemap'
+  - 'themes'
+  - 'treatment'
+  - 'waste'
+Publisher:
+  Name: 'National Environment Agency'
+  Admin 1:
+    Name: 'Au Ann Teck'
+    Department: 'NATIONAL ENVIRONMENT AGENCY'
+    Email: 'au_ann_teck@nea.gov.sg'
+Sources:
+  - 'National Environment Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Half-yearly'
+Last Updated: '2020-01-17T00:07:03.243440'
+Resources:
+  -
+    Identifier: 'b8263547-342e-4aad-84e2-cac27f7c7c91'
+    Title: 'Waste Treatment (KML)'
+    Url: 'https://geo.data.gov.sg/wastetreatment/2020/01/14/kml/wastetreatment.kml'
+    Format: 'KML'
+    Last Updated: '2020-01-13T16:00:00'
+  -
+    Identifier: 'ab628ef5-6ce4-4530-a9f3-be907d637de3'
+    Title: 'Waste Treatment (GEOJSON)'
+    Url: 'https://geo.data.gov.sg/wastetreatment/2020/01/14/geojson/wastetreatment.geojson'
+    Format: 'GeoJSON'
+    Last Updated: '2020-01-13T16:00:00'
