@@ -1,0 +1,40 @@
+# Metadata for Bloodbank locations
+---
+Identifier: '1c1d9f33-b37a-48ee-9345-23bbfb69dda7'
+Name: 'bloodbank-locations'
+Title: 'Bloodbank locations'
+Description: 'List of permanent bloodbank locations'
+Topics:
+  - 'Health'
+Keywords:
+  - 'OneMap'
+  - 'apheresis'
+  - 'blood'
+  - 'bloodbank'
+  - 'donation'
+  - 'red cross'
+  - 'whole blood'
+Publisher:
+  Name: 'Health Sciences Authority'
+  Admin 1:
+    Name: 'Alvin Low'
+    Department: 'Health Sciences Authority'
+    Email: 'alvin_low@hsa.gov.sg'
+Sources:
+  - 'Health Sciences Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Last Updated: '2017-04-01T04:06:51.640073'
+Resources:
+  -
+    Identifier: 'e31f48e3-3aa7-45c8-b610-32539b69ac70'
+    Title: 'Bloodbank locations (KML)'
+    Url: 'https://geo.data.gov.sg/blood-bank/2015/12/09/kml/blood-bank.zip'
+    Format: 'KML'
+    Last Updated: '2015-12-08T16:00:00'
+  -
+    Identifier: 'f5db57a5-207d-4ad9-b38d-ef1616826448'
+    Title: 'Bloodbank locations (SHP)'
+    Url: 'https://geo.data.gov.sg/blood-bank/2015/12/09/shp/blood-bank.zip'
+    Format: 'SHP'
+    Last Updated: '2015-12-08T16:00:00'

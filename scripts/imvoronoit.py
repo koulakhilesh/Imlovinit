@@ -26,7 +26,7 @@ from data.db_description import getDatabase
 
 
 
-class imlovint():
+class imvoronoit():
     
     def __init__(self,chain='MCD',notebook=True):
         
@@ -187,15 +187,12 @@ class imlovint():
         
         
 if __name__ == '__main__':
-    imlovint_class=imlovint(chain='HAWKER_CENTRE',notebook=False)
+    imvoronoit_class=imvoronoit(chain='MUSEUMS',notebook=False)
     # imlovint_class.getBoundary(plot=True)
     # imlovint_class.justDots()
     # imlovint_class.drawVoronoi()
-    nearbyDF=imlovint_class.getNearby(address='Bukit Timah' , distance=0.03)
+    nearbyDF=imvoronoit_class.getNearby(address='Bukit Timah' , distance=0.03)
     # 
       
 
-   # 'MCD' :  ok    
-   # 'LIBRARY': ok
-   # 'MUSEUMS'  : ok
        

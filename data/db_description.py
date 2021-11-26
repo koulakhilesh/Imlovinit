@@ -20,7 +20,7 @@ def getDatabase():
     
     db_dict=[]
     mcd={'Name':'MCD',
-         'Description':'List of MCD outlets in Singpore',
+         'Description':'List of MCD outlets in Singapore',
          'Remarks':'NA',
          'logoFile':'data/logoFiles/MCD.png',
          'shapeFile':'data/shapeFiles/mcd/mcd_gdf.shp',
@@ -32,7 +32,7 @@ def getDatabase():
     db_dict.append(mcd)
     
     library={'Name':'LIBRARY',
-         'Description':'List of Library location in Sinagpore',
+         'Description':'List of Library location in Singapore',
          'Remarks':'Converted from .kml to .shp',
          'logoFile':'data/logoFiles/LIBRARY.png',
          'shapeFile':'data/shapeFiles/library/libraries-point.shp',
@@ -44,7 +44,7 @@ def getDatabase():
     db_dict.append(library)
     
     museums={'Name':'MUSEUMS',
-         'Description':'List of Museums location in Sinagpore',
+         'Description':'List of Museums location in Singapore',
          'Remarks':'Converted from .kml to .shp',
          'logoFile':'data/logoFiles/MUSEUMS.png',
          'shapeFile':'data/shapeFiles/museums/museums-kml-point.shp',
@@ -93,7 +93,7 @@ def getDatabase():
     db_dict.append(waste_treatment)
     
     monuments={'Name':'MONUMENTS',
-          'Description':'List of locations of monuments in Sinagpore',
+          'Description':'List of locations of monuments in Singapore',
           'Remarks':'Converted from .geojson to .shp',
           'logoFile':'data/logoFiles/MONUMENTS.png',
           'shapeFile':'data/shapeFiles/monuments/monuments-geojson.shp',
@@ -105,7 +105,7 @@ def getDatabase():
     db_dict.append(monuments)
     
     historic_sites={'Name':'HISTORIC_SITES',
-          'Description':'List of locations of Historic Sites in Sinagpore',
+          'Description':'List of locations of Historic Sites in Singapore',
           'Remarks':'Converted from .geojson to .shp',
           'logoFile':'data/logoFiles/HISTORIC.png',
           'shapeFile':'data/shapeFiles/historic_sites/historic-sites-geojson.shp',
@@ -117,7 +117,7 @@ def getDatabase():
     db_dict.append(historic_sites)
     
     heritage_trees={'Name':'HERITAGE_TREES',
-          'Description':'List of locations of Heritage trees Sites in Sinagpore',
+          'Description':'List of locations of Heritage trees Sites in Singapore',
           'Remarks':'Converted from .geojson to .shp',
           'logoFile':'data/logoFiles/HERITAGE.png',
           'shapeFile':'data/shapeFiles/heritage_trees/heritage-trees-geojson.shp',
@@ -129,7 +129,7 @@ def getDatabase():
     db_dict.append(heritage_trees)
     
     hawker_centres={'Name':'HAWKER_CENTRE',
-          'Description':'List of locations of Hawker Center in Sinagpore',
+          'Description':'List of locations of Hawker Center in Singapore',
           'Remarks':'Converted from .geojson to .shp',
           'logoFile':'data/logoFiles/HAWKER.png',
           'shapeFile':'data/shapeFiles/hawker_centres/hawker-centres-geojson.shp',

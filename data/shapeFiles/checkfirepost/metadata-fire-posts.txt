@@ -1,0 +1,40 @@
+# Metadata for Fire Posts
+---
+Identifier: '117a88cf-b5d8-4cb9-ba50-5e89d0326a50'
+Name: 'fire-posts'
+Title: 'Fire Posts'
+Description: 'Directory of Fire Posts'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'Emergency'
+  - 'Fire'
+  - 'Fire post'
+  - 'SCDF'
+  - 'Singapore Civil Defence Force'
+  - 'onemap'
+  - 'themes'
+Publisher:
+  Name: 'Ministry of Home Affairs - Singapore Civil Defence Force'
+  Admin 1:
+    Name: 'SCDF Webmaster'
+    Department: 'Ministry of Home Affairs - Singapore Civil Defence Force'
+    Email: 'amos_lau@scdf.gov.sg'
+Sources:
+  - 'Ministry of Home Affairs - Singapore Civil Defence Force'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Last Updated: '2017-07-14T03:51:01.579903'
+Resources:
+  -
+    Identifier: '3f76da89-7783-474d-bd51-f79890be7a82'
+    Title: 'Fire Posts (KML)'
+    Url: 'https://geo.data.gov.sg/firepost/2017/07/13/kml/firepost.zip'
+    Format: 'KML'
+    Last Updated: '2017-07-12T16:00:00'
+  -
+    Identifier: 'bff35881-950b-41fb-ba6f-137bec96c64d'
+    Title: 'Fire Posts (SHP)'
+    Url: 'https://geo.data.gov.sg/firepost/2017/07/13/shp/firepost.zip'
+    Format: 'SHP'
+    Last Updated: '2017-07-12T16:00:00'
