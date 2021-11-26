@@ -72,7 +72,30 @@ https://github.com/othneildrew/Best-README-Template
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/koulakhilesh/imvoronoit/imlovinit_NB.ipynb)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+Have you ever wondered how many MCD locations are in you city or how many museums are in your neighbourhood. In this project, taking Singapore as a base map, respective Voronoi plot are drawn for different chains. 
+
+### Available Chain to choose from  : 
+* MCD : List of MCD outlets in Singapore
+* LIBRARY : List of Library location in Singapore
+* MUSEUMS : List of Museums location in Singapore
+* E_WASTE : List of E-waste recycling near you
+* WIRELESS_HS : List of Wireless@SG hotspots in Singapore
+* WASTE_TREATMENT : Location of Toxic Industrial Wastes Treatment and Disposal Facilities
+* MONUMENTS : List of locations of monuments in Singapore
+* HISTORIC_SITES : List of locations of Historic Sites in Singapore
+* HERITAGE_TREES : List of locations of Heritage trees Sites in Singapore
+* HAWKER_CENTRE : List of locations of Hawker Center in Singapore
+* DSA : List of locations of Designated Smoking Areas (DSA)
+* CFT : List of locations of Cash For Trash stations near you
+
+Wikipedia Introduction:
+
+<q>In mathematics, a Voronoi diagram is a partition of a plane into regions close to each of a given set of objects. In the simplest case, these objects are just finitely many points in the plane (called seeds, sites, or generators). For each seed there is a corresponding region, called a Voronoi cell, consisting of all points of the plane closer to that seed than to any other. The Voronoi diagram of a set of points is dual to its Delaunay triangulation.The Voronoi diagram is named after Georgy Voronoy, and is also called a Voronoi tessellation, a Voronoi decomposition, a Voronoi partition, or a Dirichlet tessellation (after Peter Gustav Lejeune Dirichlet). Voronoi cells are also known as Thiessen polygons. Voronoi diagrams have practical and theoretical applications in many fields, mainly in science and technology, but also in visual art.
+
+
+
+<!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+-->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -80,14 +103,15 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Numpy](https://numpy.org/)
+* [Geopandas](https://geopandas.org/en/stable/)
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Requests](https://docs.python-requests.org/en/latest/)
+* [Tqdm](https://github.com/tqdm/tqdm)
+* [Shapely](https://shapely.readthedocs.io/en/stable/manual.html)
+* [Geovoronoi](https://pypi.org/project/geovoronoi/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -95,7 +119,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
+<!--
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
@@ -122,32 +146,32 @@ This is an example of how to list things you need to use the software and how to
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
-
+-->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+<!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+-->
 
 <!-- ROADMAP -->
 ## Roadmap
-
+<!--
 - [] Feature 1
 - [] Feature 2
 - [] Feature 3
     - [] Nested Feature
 
 See the [open issues](https://github.com//koulakhilesh/Imlovinit/issues) for a full list of proposed features (and known issues).
-
+-->
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -196,9 +220,8 @@ Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/kou
 ## Acknowledgments
 
 * [https://data.gov.sg/](https://data.gov.sg/)
-<!--* []()
-* []()
- -->
+* [https://www.onemap.gov.sg/]
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
