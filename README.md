@@ -220,7 +220,7 @@ Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/kou
 ## Acknowledgments
 
 * [https://data.gov.sg/](https://data.gov.sg/)
-* [https://www.onemap.gov.sg/]
+* [OneMap](https://www.onemap.gov.sg/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
