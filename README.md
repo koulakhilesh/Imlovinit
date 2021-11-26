@@ -1,10 +1,7 @@
 <div id="top"></div>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
+*** Fork from Best-README-Template. If you have a suggestion
+https://github.com/othneildrew/Best-README-Template
 -->
 
 
@@ -29,23 +26,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/koulakhilesh/Imlovinit">
+  <a href="https://github.com/koulakhilesh/imvoronoit">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">I'm Voronoi't</h3>
 
   <p align="center">
-    project_description
+    Voronoi Plot for the different chains e.g MCD, Museums etc
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/koulakhilesh/imvoronoit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/koulakhilesh/imvoronoit/imlovinit_NB.ipynb">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/koulakhilesh/imvoronoit/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/koulakhilesh/imvoronoit/issues">Request Feature</a>
   </p>
 </div>
 
@@ -198,7 +195,7 @@ Your Name -  koulakhilesh@gmail.com
 <!--
 *** [@twitter_handle](https://twitter.com/twitter_handle) -
 -->
-Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/koulakhilesh/Imlovinit)
+Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/koulakhilesh/imvoronoit)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -218,16 +215,16 @@ Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/kou
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/koulakhilesh/imvoronoit.svg?style=for-the-badge
+[contributors-url]: https://github.com/koulakhilesh/imvoronoit/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/koulakhilesh/imvoronoit.svg?style=for-the-badge
+[forks-url]: https://github.com/koulakhilesh/imvoronoit/network/members
+[stars-shield]: https://img.shields.io/github/stars/koulakhilesh/imvoronoit.svg?style=for-the-badge
+[stars-url]: https://github.comkoulakhilesh/imvoronoit/stargazers
+[issues-shield]: https://img.shields.io/github/issues/koulakhilesh/imvoronoit.svg?style=for-the-badge
+[issues-url]: https://github.com/koulakhilesh/imvoronoit/issues
+[license-shield]: https://img.shields.io/github/license/koulakhilesh/imvoronoit.svg?style=for-the-badge
+[license-url]: https://github.com/koulakhilesh/imvoronoit/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/akhilesh-koul
 [product-screenshot]: images/screenshot.png
