@@ -29,7 +29,7 @@ https://github.com/othneildrew/Best-README-Template
     <a href="https://github.com/koulakhilesh/imvoronoit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/koulakhilesh/imvoronoit/imlovinit_NB.ipynb">View Demo</a>
+    <a href="https://github.com/koulakhilesh/imvoronoit/blob/main/imvoronoit_NB.ipynb">View Demo</a>
     ·
     <a href="https://github.com/koulakhilesh/imvoronoit/issues">Report Bug</a>
     ·
