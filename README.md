@@ -1,19 +1,27 @@
 <div id="top"></div>
 <!--
-
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
 -->
 
 
 
 <!-- PROJECT SHIELDS -->
 <!--
-
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![GNU License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -150,7 +158,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [] Feature 3
     - [] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com//koulakhilesh/Imlovinit/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -177,7 +185,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GNU General Public License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,9 +194,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Your Name -  koulakhilesh@gmail.com
+<!--
+*** [@twitter_handle](https://twitter.com/twitter_handle) -
+-->
+Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/koulakhilesh/Imlovinit)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -197,9 +207,10 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [https://data.gov.sg/](https://data.gov.sg/)
+<!--* []()
 * []()
-* []()
-* []()
+ -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
