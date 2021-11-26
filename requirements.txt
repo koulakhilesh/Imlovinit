@@ -1,9 +1,5 @@
 numpy==1.21.2
-numpy-base==1.21.2
 geopandas==0.8.2
-geopy==2.2.0
-geos==3.8.0
-geotiff==1.6.0
 geovoronoi==0.3.0
 matplotlib==3.3.4
 matplotlib-inline==0.1.2
