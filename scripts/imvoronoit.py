@@ -6,7 +6,6 @@ Created on Fri Nov 19 09:27:40 2021
 @author: akhilesh.koul
 """
 
-import numpy as np
 import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -15,11 +14,10 @@ sys.path.append("..")
 import seaborn as sns
 sns.set_theme()
 import requests
-from tqdm import tqdm
 from shapely.geometry import Point
 from shapely.ops import cascaded_union
 from shapely.ops import unary_union
-from geovoronoi.plotting import subplot_for_map, plot_voronoi_polys_with_points_in_area
+from geovoronoi.plotting import plot_voronoi_polys_with_points_in_area
 from geovoronoi import voronoi_regions_from_coords, points_to_coords
 from data.db_description import getDatabase
 
@@ -188,9 +186,9 @@ class imvoronoit():
         
 if __name__ == '__main__':
     imvoronoit_class=imvoronoit(chain='MUSEUMS',notebook=False)
-    # imlovint_class.getBoundary(plot=True)
-    # imlovint_class.justDots()
-    # imlovint_class.drawVoronoi()
+    imvoronoit_class.getBoundary(plot=True)
+    imvoronoit_class.justDots()
+    imvoronoit_class.drawVoronoi()
     nearbyDF=imvoronoit_class.getNearby(address='Bukit Timah' , distance=0.03)
     # 
       
