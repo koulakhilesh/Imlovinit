@@ -29,7 +29,7 @@ https://github.com/othneildrew/Best-README-Template
     <a href="https://github.com/koulakhilesh/imvoronoit"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/koulakhilesh/imvoronoit/blob/main/imvoronoit_NB.ipynb">View Demo</a>
+    <a href="https://imvoronoit-hku.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/koulakhilesh/imvoronoit/issues">Report Bug</a>
     ·
@@ -210,7 +210,7 @@ Your Name -  koulakhilesh@gmail.com
 <!--
 *** [@twitter_handle](https://twitter.com/twitter_handle) -
 -->
-Project Link: [https://github.com/koulakhilesh/Imlovinit](https://github.com/koulakhilesh/imvoronoit)
+Project Link: [https://github.com/koulakhilesh/imvoronoit](https://github.com/koulakhilesh/imvoronoit)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
