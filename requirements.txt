@@ -41,7 +41,6 @@ entrypoints==0.3
 Fiona==1.8.13.post1
 flake8==3.9.2
 fonttools==4.25.0
-GDAL==3.0.2
 geographiclib==1.52
 geopandas==0.8.2
 geopy==2.2.0
